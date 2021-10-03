@@ -1,6 +1,6 @@
-import logo from './logo.svg';
-import logoequipo from './media/Logo-equipo.ico';
-import './Styles/App.css';
+import 'Styles/App.css';
+import logoequipo from 'media/Logo-equipo.ico';
+
 
 function maestroVtas() {
     return (
