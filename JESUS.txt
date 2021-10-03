@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 Mucho Gusto, 
 Mi nombre es Jesús Pinto Jaramillo  
 Diseñador Gráfico / Técnico en Publicidad y Mercadeo
@@ -6,3 +7,13 @@ Actualmente soy Scrum Master del Grupo 9 (Los Rookies)
 Proyecto para el Ciclo 3 / Curso "Desarrollo de Software" 
 Universidad de Antioquia / Ministerio de Telecomunicaciónes 
 Programa MINTIC2022
+=======
+Mucho Gusto, 
+Mi nombre es Jesús Pinto Jaramillo  
+Diseñador Gráfico / Técnico en Publicidad y Mercadeo
+
+Actualmente soy Scrum Master del Grupo 9 (Los Rookies)
+Proyecto para el Ciclo 3 del Curso "Desarrollo de Software" 
+Universidad de Antioquia y el Ministerio de Telecomunicaciónes 
+Programa MINTIC2022
+>>>>>>> 73654bc9956df394f6225e9000594a582fdf15d3
