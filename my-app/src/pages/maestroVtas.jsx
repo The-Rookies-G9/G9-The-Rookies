@@ -1,12 +1,11 @@
 import 'Styles/App.css';
 import logoequipo from 'media/Logo-equipo.ico';
-import Header from 'components/header.jsx';
+
 
 
 function maestroVtas() {
     return (
       <div>
-        <Header />
         <main>
           <aside className="bloqueAside">
             <ul>

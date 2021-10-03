@@ -11,8 +11,6 @@ const Header = () => {
                 <button className="navbarButton tamañoFuente">Inicio</button>
                 <button className="navbarButton tamañoFuente">Regresar</button>
                 <button className="navbarButton tamañoFuente">Salir</button>
-                <input className="tamañoFuente"placeholder="Buscar"/>
-                <i className="fas fa-search"></i>
               </li>
             </ul>
       </header>
