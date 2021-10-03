@@ -1,24 +1,12 @@
 import 'Styles/App.css';
 import logoequipo from 'media/Logo-equipo.ico';
+import Header from 'components/header.jsx';
 
 
 function maestroVtas() {
     return (
       <div>
-        <header className="navbarFondo">
-          <ul>
-              <li>
-                <img src={logoequipo} alt='imagen' className="logo" />
-              </li>
-              <li className="positionButton" >
-                <button className="navbarButton tamañoFuente">Inicio</button>
-                <button className="navbarButton tamañoFuente">Regresar</button>
-                <button className="navbarButton tamañoFuente">Salir</button>
-                <input className="tamañoFuente"placeholder="Buscar"/>
-                <i className="fas fa-search"></i>
-              </li>
-            </ul>
-      </header>
+        <Header />
         <main>
           <aside className="bloqueAside">
             <ul>
@@ -75,7 +63,7 @@ function maestroVtas() {
                     <input name="cliente" className="casilla" placeholder="Ej: Daniel Pulido"/>
                   </label>
                   <label for="tipoId">
-                    Tipo de Identificación:
+                    Tipo ID:
                     <select name="tipoId">
                       <option value="0">Seleccione</option>
                       <option value="CC">Cédula de ciudadania</option>
@@ -85,7 +73,7 @@ function maestroVtas() {
                     </select>
                   </label>
                   <label for="numeroDoc">
-                    Número de Identificación:
+                    No. ID:
                     <input name="numeroDoc" type="number" step="7" placeholder="Ej: 9786566" />
                   </label>
                 </li>
