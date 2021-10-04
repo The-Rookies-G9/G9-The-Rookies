@@ -12,14 +12,15 @@ import firebase from 'firebase/compat/app';
 
 
 const firebaseConfig = {
-  apiKey: "AIzaSyDEm3Kqe6NrfcLxXgIMcc4FxcoFz_PmVGY",
-  authDomain: "login-a1889.firebaseapp.com",
-  projectId: "login-a1889",
-  storageBucket: "login-a1889.appspot.com",
-  messagingSenderId: "620702765740",
-  appId: "1:620702765740:web:ae441d28e08d23075d0509",
-  measurementId: "G-5HDW5T3Q2X"
+  apiKey: "AIzaSyDt1RxoybACqJNQXBafGK-zNnu9hR30Bj0",
+  authDomain: "oceanic-camera-328004.firebaseapp.com",
+  projectId: "oceanic-camera-328004",
+  storageBucket: "oceanic-camera-328004.appspot.com",
+  messagingSenderId: "663883928009",
+  appId: "1:663883928009:web:41ea9fb69ae13fec7f9818",
+  measurementId: "G-MP0KM0PW8L"
 };
+
 
 if(!firebase.app[0]){
   firebase.initializeApp(firebaseConfig);

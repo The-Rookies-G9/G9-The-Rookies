@@ -5,7 +5,7 @@
     <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="theme-color" content="#000000" />
-    <meta name="google-signin-client_id" content="1092378714720-5fjnqp3co0qtvuo1n8n4pihrnkiq0t7c.apps.googleusercontent.com">
+    <meta name="google-signin-client_id" content="663883928009-htpqqnqu74irl4334peh07b6lve7vj96.apps.googleusercontent.com">
     <meta
       name="description"
       content="Web site created using create-react-app"
@@ -65,7 +65,7 @@ function onSignIn(googleUser) {
 }
 
 var xhr = new XMLHttpRequest();
-xhr.open('POST', 'https://yourbackend.example.com/tokensignin');
+xhr.open('POST', 'https://localhost:3000');
 xhr.setRequestHeader('Content-Type', 'application/x-www-form-urlencoded');
 xhr.onload = function() {
   console.log('Signed in as: ' + xhr.responseText);
@@ -102,7 +102,7 @@ xhr.send('idtoken=' + id_token);
   <script>
   window.onload = function () {
     google.accounts.id.initialize({
-      client_id: '1092378714720-5fjnqp3co0qtvuo1n8n4pihrnkiq0t7c.apps.googleusercontent.com',
+      client_id: '663883928009-htpqqnqu74irl4334peh07b6lve7vj96.apps.googleusercontent.com',
       callback: handleCredentialResponse
     });
     google.accounts.id.prompt();
