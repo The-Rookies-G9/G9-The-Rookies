@@ -49,7 +49,7 @@ class Crud extends React.Component{
         
            <Table>
                <thead>
-                    <th>Id Venta</th>
+                    <th>Id Venta </th> 
                     <th>Fecha</th>
                     <th>Valor Total Venta</th>
                     <th>Id Producto</th>
