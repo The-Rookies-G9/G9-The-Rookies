@@ -1,5 +1,5 @@
 import 'Styles/App.css';
-import logoequipo from 'media/Logo-equipo.ico';
+import Crud from 'components/crudMaestroVtas';
 
 
 
@@ -79,21 +79,9 @@ function maestroVtas() {
               </ul>
             </form>
           </section>
-    
+
           <section>
-            <table>
-              <caption>Resultados de Busqueda</caption>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-              <th></th>
-            </table>
+            <Crud />
           </section>
   
       </main>
