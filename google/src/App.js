@@ -98,8 +98,8 @@ function App() {
       </Nav.Link>
       <Navbar.Brand href="#signin">
       <div id="g_id_onload"
-         data-client_id="1092378714720-5fjnqp3co0qtvuo1n8n4pihrnkiq0t7c.apps.googleusercontent.com"
-         data-login_uri="https://your.domain/your_login_endpoint"
+         data-client_id="663883928009-htpqqnqu74irl4334peh07b6lve7vj96.apps.googleusercontent.com"
+         data-login_uri="https://localhost:3000"
          data-auto_prompt="false">
       </div>
       <div class="g_id_signin"
