@@ -9,6 +9,14 @@ function App() {
   return (
     <div className="App">
       <Router>
+        <Switch>
+          <Route to = '/login'>
+            <Login/>
+          </Route>
+          <Route to = '/registro'>
+            <Registro/>
+          </Route>
+        </Switch>
         <Layout>
           <Switch>
             <Route path='/maestroVtas'>
