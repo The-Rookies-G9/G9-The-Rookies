@@ -5,3 +5,5 @@ const Registro = () => {
         <div>Pagina de registro de usuarios</div>
     )
 }
+
+export default Registro;

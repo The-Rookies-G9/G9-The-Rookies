@@ -1,6 +1,9 @@
-import Layout from 'layouts/layout';
+import Layout from 'layouts/Layout';
 import 'Styles/App.css';
 import 'bootstrap/dist/css/bootstrap.css';
+import Index from 'pages/index';
+import Login from 'pages/login';
+import Registro from 'pages/registro';
 import MaestroVtas from 'pages/maestroVtas';
 import { BrowserRouter as Router, Switch, Route } from 'react-router-dom';
 
@@ -19,8 +22,11 @@ function App() {
         </Switch>
         <Layout>
           <Switch>
-            <Route path='/maestroVtas'>
+            <Route to ='/maestroVtas'>
               <MaestroVtas />
+            </Route>
+            <Route to = '/'>
+              <Index />
             </Route>
           </Switch>
         </Layout>

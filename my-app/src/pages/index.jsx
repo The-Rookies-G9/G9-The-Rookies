@@ -5,3 +5,5 @@ const Index = () => {
         <div>Contenido landing de la Página publica de inicio</div>
     )
 }
+
+export default Index;
