@@ -13,23 +13,28 @@ function App() {
     <div className="App">
       <Router>
         <Switch>
-          <Route to = '/login'>
+          <Route path = '/login'>
             <Login/>
           </Route>
-          <Route to = '/registro'>
+          <Route path = '/registro'>
             <Registro/>
           </Route>
         </Switch>
         <Layout>
           <Switch>
-            <Route to ='/maestroVtas'>
+          <Route path ='/admin'>
               <MaestroVtas />
             </Route>
-            <Route to = '/'>
-              <Index />
+            <Route path ='/maestroVtas'>
+              <MaestroVtas />
             </Route>
           </Switch>
         </Layout>
+        <Switch>
+        <Route path = '/'>
+            <Index />
+        </Route>
+        </Switch>
       </Router>
     </div>
   );

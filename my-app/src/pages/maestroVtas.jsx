@@ -74,7 +74,7 @@ function maestroVtas() {
 
           <Crud />
   
-      </main>
+        </main>
       </div>
     );
   }
