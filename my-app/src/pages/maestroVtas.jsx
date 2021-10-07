@@ -1,4 +1,5 @@
 import 'Styles/App.css';
+import 'bootstrap/dist/css/bootstrap.css';
 import Crud from 'components/crudMaestroVtas';
 
 
@@ -7,38 +8,29 @@ function maestroVtas() {
     return (
       <div>
         <main>
-          <aside className="bloqueAside">
-            <ul>
-              <li>Inicio</li>
-              <li>Registro</li>
-              <li>Productos</li>
-              <li>Ventas</li>
-              <li>Clientes</li>
-            </ul>
-          </aside>
-          <section className="seccionBusqueda" >
+          <section  className="mb-3" >
             <form >
               <ul>
                 <li>
                   <label for="idvta">
                     Cód. Venta
-                    <input name="idvta" placeholder="Id de venta"/>
+                    <input name="idvta" className="casilla"  placeholder="Id de venta"/>
                   </label>
                   <label for="vendedor">
                     Vendedor
-                    <input name="vendedor"  placeholder="Ingrese nombre"/>
+                    <input name="vendedor" className="casilla"  placeholder="Ingrese nombre"/>
                   </label>
                   <label for="idVendedor">
                     Cód. Vendedor
-                    <input name="idVendedor"  placeholder="Identificación"/>
+                    <input name="idVendedor" className="casilla"  placeholder="Identificación"/>
                   </label>
                 </li>
               </ul>
               <ul>
                   <li >
-                    <label for="estado" className="positionLabel">
+                    <label for="estado">
                       Estado:
-                      <select name="estado">
+                      <select name="estado" className="casilla">
                         <option value="0">Seleccione</option>
                         <option value="En proceso">En proceso</option>
                         <option value="Cancelada">Cancelada</option>
@@ -47,11 +39,11 @@ function maestroVtas() {
                     </label>
                     <label for="desdeFecha" className="positionLabel">
                       Desde:
-                      <input name="desdeFecha" type="date" placeholder="fecha"/>
+                      <input name="desdeFecha" type="date" className="casilla"  placeholder="fecha"/>
                     </label>
                     <label for="hastaFecha" className="positionLabel">
                       Hasta:
-                      <input name="hastaFecha" type="date" placeholder="fecha"/>
+                      <input name="hastaFecha" type="date" className="casilla"  placeholder="fecha"/>
                     </label>
                   </li>
               </ul>
@@ -59,11 +51,11 @@ function maestroVtas() {
                 <li>
                   <label for="cliente">
                     Cliente:
-                    <input name="cliente" className="casilla" placeholder="Ej: Daniel Pulido"/>
+                    <input name="cliente" className="casilla"  placeholder="Ej: Daniel Pulido"/>
                   </label>
                   <label for="tipoId">
                     Tipo ID:
-                    <select name="tipoId">
+                    <select name="tipoId" className="casilla" >
                       <option value="0">Seleccione</option>
                       <option value="CC">Cédula de ciudadania</option>
                       <option value="CE">Cédula de Extranjeria</option>
@@ -73,16 +65,14 @@ function maestroVtas() {
                   </label>
                   <label for="numeroDoc">
                     No. ID:
-                    <input name="numeroDoc" type="number" step="7" placeholder="Ej: 9786566" />
+                    <input name="numeroDoc" type="number" step="7" className="casilla"  placeholder="Ej: 9786566" />
                   </label>
                 </li>
               </ul>
             </form>
           </section>
 
-          <section>
-            <Crud />
-          </section>
+          <Crud />
   
       </main>
       </div>

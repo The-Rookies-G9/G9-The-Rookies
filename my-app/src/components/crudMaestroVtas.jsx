@@ -47,9 +47,9 @@ class Crud extends React.Component{
 
            
         
-           <Table>
+           <Table  className="table table-striped">
                <thead>
-                    <th>Id Venta </th> 
+                    <th>Id Venta</th> 
                     <th>Fecha</th>
                     <th>Valor Total Venta</th>
                     <th>Id Producto</th>
@@ -59,27 +59,28 @@ class Crud extends React.Component{
                     <th>Id Cliente</th>
                     <th>Vendedor</th>
                     <th>Id Vendedor</th>
+                    <th>Estado</th>
                     <th>Acciones</th>
                 </thead>
 
                 <tbody> {
                     this.state.data.map((dato) => (
                         <tr key={dato.IdVta}>
-                            <td>{dato.IdVta}</td>
-                            <td>{dato.Fecha}</td>
-                            <td>{dato.Total}</td>
-                            <td>{dato.IdPcto}</td>
-                            <td>{dato.Cantidad}</td>
-                            <td>{dato.Vunit}</td>
-                            <td>{dato.Cliente}</td>
-                            <td>{dato.IdCliente}</td>
-                            <td>{dato.vendedor}</td>
-                            <td>{dato.IdVende}</td>
-                            <td>{dato.Estado}</td>
-                            <td><Button><i class="bi bi-pen">Editar</i></Button></td>{"  "}
-                            <td><Button><i class="bi bi-save">Guardar</i></Button></td>{"  "}
-                            <td><Button><i class="bi bi-reply">Deshacer</i></Button></td>{"  "}
-                            <td><Button><i class="bi bi-trash">Eliminar</i></Button></td>
+                            <td>{dato.IdVta}</td>{"  "}
+                            <td>{dato.Fecha}</td>{"  "}
+                            <td>{dato.Total}</td>{"  "}
+                            <td>{dato.IdPcto}</td>{"  "}
+                            <td>{dato.Cantidad}</td>{"  "}
+                            <td>{dato.Vunit}</td>{"  "}
+                            <td>{dato.Cliente}</td>{"  "}
+                            <td>{dato.IdCliente}</td>{"  "}
+                            <td>{dato.vendedor}</td>{"  "}
+                            <td>{dato.IdVende}</td>{"  "}
+                            <td>{dato.Estado}</td>{"  "}
+                            <td><Button color= "primary" ><i class="bi bi-pen"></i></Button></td>{"  "}
+                            <td><Button color= "success"><i class="bi bi-save"></i></Button></td>{"  "}
+                            <td><Button color="warning" ><i class="bi bi-reply"></i></Button></td>{"  "}
+                            <td><Button color="danger"><i class="bi bi-trash"></i></Button></td>
                         </tr>
                         ))
                     }

@@ -1,4 +1,6 @@
+import React from 'react';
 import logoequipo from 'media/Logo-equipo.ico';
+
 
 const Header = () => {
     return (
